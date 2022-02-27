@@ -4,7 +4,17 @@
 
 {% block content %}
 
-<p>Hello</p> 
+<div class="input-group mb-3">
+              
+    <select id="select_1" class="form-select form-select-lg" aria-label="Example select with button addon">
+        <option value="" selected disabled hidden>Выберите клиента:</option>
+        {% for client in clients %}
+        <option>{{ client }}</option>
+        {% endfor %}
+    </select>
+    
+    <button id="customer" onclick="count(select_1.value)" class="btn btn-outline-secondary btn-lg col-md-2" type="button">Начать!</button>
+</div>
 
 {{ time }}
 
