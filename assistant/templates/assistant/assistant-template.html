@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}WebMiningCalculator{% endblock title %}
+{% block title %}Manager Assistant{% endblock title %}
 
 {% block content %}
 
@@ -16,7 +16,112 @@
     <button id="customer" onclick="count(select_1.value)" class="btn btn-outline-secondary btn-lg col-md-2" type="button">Начать!</button>
 </div>
 
-{{ time }}
+<div class="row align-items-md-stretch mb-3">
+                
+    <div class="col-md-8">
+        <h2 class="mb-2 mx-auto">Рекомендуемый вопрос</h2>
 
+        <div class="answer-wrapper h-80 p-3 bg-light border rounded-3">
+                <p class="question-field display-6 fw-bold" quest-id={{first_question.id}}>{{ first_question }}</p>
+                <div class="d-grid gap-2 justify-content-md-end">
+                    {% for answer in answers %}
+                    <button ans-id={{answer.id}} class="answer-btn btn btn-primary fs-5" type="button">{{answer.answer_title}}</button>
+                    {% endfor %}
+                </div>
+                <br>
+                
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Ни один ответ не подошёл - внесите ответ клиента" aria-label="Recipient&#39;s username" aria-describedby="basic-addon2">
+                    <button ans-id="custom" class="answer-btn btn btn-outline-secondary btn-lg fs-4" type="button"> Продолжить </button>
+                  </div>
+
+        </div>
+
+    </div>
+    
+    <div class="col-md-4">
+        <h2 class="mb-2 mx-auto">Оборудование</h2>
+
+        <div class="treeview-animated h-80 bg-light border rounded-3 overflow-auto mb-3 mb-md-0 mr-md-3 bg-light" style="max-width: 760px; height: 402px;">
+            
+            <ul class="item-container treeview-animated-list mb-3 col-sm-4">
+               {% for cat in categories %}
+                    <li class="item-wrapper treeview-animated-items">
+                        <a id="cat-id-{{ cat.id }}" class="item-li treeview-animated-items-header" cat-id="{{ cat.id }}">
+                            <span class="material-icons">chevron_right</span>
+                            <span>{{ cat.name }}</span>
+                        </a>
+                        <ul class="equipment-list nested">
+                            
+                        </ul>
+                    </li>
+               {% endfor %}
+            </ul>
+
+        </div>
+    
+    </div>
+    
+
+</div>
+
+<div class="row align-items-md-stretch">
+    
+    <div class="col-md-8">
+        <h2 class="mb-2 mx-auto">Последующие вопросы</h2>
+
+        <div class="h-50 p-4 bg-light border rounded-3 mb-1">
+            
+            <p class="next-quest col-md-8 fs-5">{{next_question}}</p>                                        
+            
+
+        </div>
+
+        <h2 class="arguments col-md-8 fs-4">Аргументы на возражения</h2>
+
+        <div class="h-49 p-4 bg-light border rounded-3">
+            
+            
+
+            <table>
+                <tbody><tr class="col-6 fs-5">
+                    <th>Возражения</th>
+                    <th class="col-6 fs-5">Аргументы</th>
+                </tr>
+
+                <tr class="col-6 fs-5">
+                  <td>У вас дорого?</td>
+                  <td>У нас качество выше, чем у конкурентов.</td>
+                </tr>
+
+                <tr class="col-6 fs-5">
+                    <td>До лета не работаем.</td>
+                    <td>Мы перезвоним вам чуть позже.</td>
+                  </tr>
+              </tbody></table>
+
+
+        </div>
+
+
+    </div>
+    
+    <div class="col-md-4">
+        
+        <h2 class="mb-2 mx-auto">Характеристики</h2>
+
+        <div class="h-100 bg-light border rounded-3">
+            <div id="characteristics" class="col-md-8 fs-5">
+            </div>
+        </div> 
+    
+    </div>
+    
+<div class="white-space">
+</div>
+</div>
 {% endblock content %}
+    
+{% block domready %}
 
+{% endblock %}

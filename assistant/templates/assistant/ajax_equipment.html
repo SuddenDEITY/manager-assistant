@@ -1,0 +1,20 @@
+{% for eq in equipments %}
+    <li class="equipment-li" eq-id="{{ eq.id }}">
+        <div class="treeview-animated-element">{{ eq.name }} | {{ eq.drilling_type }}</div>
+    </li>
+{% endfor %}
+<script>
+    $('.equipment-li').click(function(e){
+        e.stopPropagation();
+        $('.equipment-li').removeClass('active-eq');
+        $(this).addClass('active-eq');
+        var equipment_id = $(this).attr('eq-id');
+        $.get(`/get_characteristic/${equipment_id}`,
+        
+            function(data){
+                $('#characteristics').html('');
+                $('#characteristics').append(data);
+            }
+        );
+});
+</script>

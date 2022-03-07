@@ -1,0 +1,16 @@
+<table class="charac-list">
+    <tr>
+        <th>
+            Параметр
+        </th>
+        <th>
+            Значение
+        </th>
+    </tr>
+    {% for charac in characteristics %}
+        <tr class="charac-li" charac-id="{{ charac.id }}">
+            <td>{{ charac.name }}</td>
+            <td>{{ charac.value }}</td>
+        </tr>
+    {% endfor %}
+</table>

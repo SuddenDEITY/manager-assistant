@@ -1,0 +1,1212 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2022-02-28T09:10:32.986Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Васнецов Андрей Иванович",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2022-02-28T09:10:50.455Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Курыгин Евгений Андросович",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2022-02-28T09:11:10.073Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Гайдученок Дмитрий Сергеевич",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2022-02-28T18:36:33.349Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Сколько скважин в месяц вы бурите?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2022-02-28T18:37:34.556Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Какой тип бура вы используете?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Question title\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2022-03-03T18:50:41.115Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Шнековое",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2022-03-03T18:50:47.053Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Пневмоударное",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2022-03-03T18:51:19.560Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Колонковое",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2022-03-03T18:51:37.223Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "4",
+    "object_repr": "Вращательное",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2022-03-03T18:52:05.697Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Труба",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2022-03-03T18:52:13.370Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Переходники, замки",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2022-03-03T18:52:18.807Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Переходники",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2022-03-03T18:52:24.813Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Пневмоударник",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2022-03-03T18:52:29.872Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Долота, коронки",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2022-03-03T18:52:41.484Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "РД-СД-ТД",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2022-03-03T18:52:45.283Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "Шнек",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2022-03-03T18:52:50.873Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "8",
+    "object_repr": "Прочее",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2022-03-03T18:54:35.883Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "1",
+    "object_repr": "Труба бурильная",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0425\\u0430\\u0440\\u0430\\u043a\\u0442\\u0435\\u0440\\u0438\\u0441\\u0442\\u0438\\u043a\\u0430\", \"object\": \"\\u0414\\u0438\\u0430\\u043c\\u0435\\u0442\\u0440\"}}, {\"added\": {\"name\": \"\\u0425\\u0430\\u0440\\u0430\\u043a\\u0442\\u0435\\u0440\\u0438\\u0441\\u0442\\u0438\\u043a\\u0430\", \"object\": \"\\u0414\\u043b\\u0438\\u043d\\u0430\"}}, {\"added\": {\"name\": \"\\u0425\\u0430\\u0440\\u0430\\u043a\\u0442\\u0435\\u0440\\u0438\\u0441\\u0442\\u0438\\u043a\\u0430\", \"object\": \"\\u0422\\u0438\\u043f \\u0437\\u0430\\u043c\\u043a\\u0430\"}}, {\"added\": {\"name\": \"\\u0425\\u0430\\u0440\\u0430\\u043a\\u0442\\u0435\\u0440\\u0438\\u0441\\u0442\\u0438\\u043a\\u0430\", \"object\": \"\\u0412\\u0438\\u0434 \\u0441\\u043e\\u0435\\u0434\\u0438\\u043d\\u0435\\u043d\\u0438\\u044f \\u043d\\u0430 \\u043a\\u043e\\u043d\\u0446\\u0430\\u0445\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2022-03-03T18:56:17.495Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "2",
+    "object_repr": "Переходник фрезерный",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0425\\u0430\\u0440\\u0430\\u043a\\u0442\\u0435\\u0440\\u0438\\u0441\\u0442\\u0438\\u043a\\u0430\", \"object\": \"\\u0422\\u0438\\u043f \\u0441\\u043e\\u0435\\u0434\\u0438\\u043d\\u0435\\u043d\\u0438\\u044f\"}}, {\"added\": {\"name\": \"\\u0425\\u0430\\u0440\\u0430\\u043a\\u0442\\u0435\\u0440\\u0438\\u0441\\u0442\\u0438\\u043a\\u0430\", \"object\": \"\\u0421\\u043e\\u0435\\u0434\\u0438\\u043d\\u0435\\u043d\\u0438\\u0435 \\u0441 \\u0444\\u0440\\u0435\\u0437\\u0435\\u0440\\u043d\\u044b\\u043c \\u043f\\u0435\\u0440\\u0435\\u0445\\u043e\\u0434\\u043e\\u043c\"}}, {\"added\": {\"name\": \"\\u0425\\u0430\\u0440\\u0430\\u043a\\u0442\\u0435\\u0440\\u0438\\u0441\\u0442\\u0438\\u043a\\u0430\", \"object\": \"\\u041f\\u0440\\u0438\\u0441\\u043e\\u0435\\u0434\\u0438\\u043d\\u0438\\u0442\\u0435\\u043b\\u044c\\u043d\\u0430\\u044f \\u0440\\u0435\\u0437\\u044c\\u0431\\u0430\"}}, {\"added\": {\"name\": \"\\u0425\\u0430\\u0440\\u0430\\u043a\\u0442\\u0435\\u0440\\u0438\\u0441\\u0442\\u0438\\u043a\\u0430\", \"object\": \"\\u0414\\u043b\\u0438\\u043d\\u0430\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2022-03-03T18:56:59.950Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "3",
+    "object_repr": "Ниппель",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0425\\u0430\\u0440\\u0430\\u043a\\u0442\\u0435\\u0440\\u0438\\u0441\\u0442\\u0438\\u043a\\u0430\", \"object\": \"\\u0414\\u0438\\u0430\\u043c\\u0435\\u0442\\u0440\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2022-03-03T18:57:41.539Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "4",
+    "object_repr": "Долото шарочное",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0425\\u0430\\u0440\\u0430\\u043a\\u0442\\u0435\\u0440\\u0438\\u0441\\u0442\\u0438\\u043a\\u0430\", \"object\": \"\\u0414\\u0438\\u0430\\u043c\\u0435\\u0442\\u0440\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2022-03-04T10:15:38.012Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "5",
+    "object_repr": "Труба обсадная",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0425\\u0430\\u0440\\u0430\\u043a\\u0442\\u0435\\u0440\\u0438\\u0441\\u0442\\u0438\\u043a\\u0430\", \"object\": \"\\u0414\\u043b\\u0438\\u043d\\u0430\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2022-03-04T10:16:57.075Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "6",
+    "object_repr": "Труба бурильная",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"\\u0425\\u0430\\u0440\\u0430\\u043a\\u0442\\u0435\\u0440\\u0438\\u0441\\u0442\\u0438\\u043a\\u0430\", \"object\": \"\\u0414\\u0438\\u0430\\u043c\\u0435\\u0442\\u0440\"}}, {\"added\": {\"name\": \"\\u0425\\u0430\\u0440\\u0430\\u043a\\u0442\\u0435\\u0440\\u0438\\u0441\\u0442\\u0438\\u043a\\u0430\", \"object\": \"\\u0414\\u043b\\u0438\\u043d\\u0430\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2022-03-04T10:17:09.975Z",
+    "user": 1,
+    "content_type": 13,
+    "object_id": "7",
+    "object_repr": "Труба обсадная",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add Ответ",
+    "content_type": 7,
+    "codename": "add_answer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change Ответ",
+    "content_type": 7,
+    "codename": "change_answer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete Ответ",
+    "content_type": 7,
+    "codename": "delete_answer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view Ответ",
+    "content_type": 7,
+    "codename": "view_answer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Вопрос",
+    "content_type": 8,
+    "codename": "add_question"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Вопрос",
+    "content_type": 8,
+    "codename": "change_question"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Вопрос",
+    "content_type": 8,
+    "codename": "delete_question"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Вопрос",
+    "content_type": 8,
+    "codename": "view_question"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add Клиент",
+    "content_type": 9,
+    "codename": "add_client"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change Клиент",
+    "content_type": 9,
+    "codename": "change_client"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete Клиент",
+    "content_type": 9,
+    "codename": "delete_client"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view Клиент",
+    "content_type": 9,
+    "codename": "view_client"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add Категория",
+    "content_type": 10,
+    "codename": "add_eq_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change Категория",
+    "content_type": 10,
+    "codename": "change_eq_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete Категория",
+    "content_type": 10,
+    "codename": "delete_eq_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view Категория",
+    "content_type": 10,
+    "codename": "view_eq_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add Характеристика",
+    "content_type": 11,
+    "codename": "add_eq_characteristics"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change Характеристика",
+    "content_type": 11,
+    "codename": "change_eq_characteristics"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete Характеристика",
+    "content_type": 11,
+    "codename": "delete_eq_characteristics"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view Характеристика",
+    "content_type": 11,
+    "codename": "view_eq_characteristics"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add Тип бура",
+    "content_type": 12,
+    "codename": "add_eq_drilling"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change Тип бура",
+    "content_type": 12,
+    "codename": "change_eq_drilling"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete Тип бура",
+    "content_type": 12,
+    "codename": "delete_eq_drilling"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view Тип бура",
+    "content_type": 12,
+    "codename": "view_eq_drilling"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add Оборудование",
+    "content_type": 13,
+    "codename": "add_equipment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change Оборудование",
+    "content_type": 13,
+    "codename": "change_equipment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete Оборудование",
+    "content_type": 13,
+    "codename": "delete_equipment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view Оборудование",
+    "content_type": 13,
+    "codename": "view_equipment"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$320000$EPCwsxUq8LgNeOsvMzlqIi$3e2gYzkhSOTr69nOaQEsZxR01cyJ0F860J/CchX+hEg=",
+    "last_login": "2022-03-03T18:31:26.067Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-02-28T09:09:53.248Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "assistant",
+    "model": "answer"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "assistant",
+    "model": "question"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "assistant",
+    "model": "client"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "assistant",
+    "model": "eq_category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "assistant",
+    "model": "eq_characteristics"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "assistant",
+    "model": "eq_drilling"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "assistant",
+    "model": "equipment"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "04btfp7d57vue9acvft47iwl79x45ipd",
+  "fields": {
+    "session_data": ".eJxVjLEOwjAMRP8lM4poDY3DyM43RI4dkwJKpKadEP9OK3UA3Xbv3b1NoGXOYWlpCqOYi-nM4beLxM9UNiAPKvdquZZ5GqPdFLvTZm9V0uu6u38HmVpe1wrAgKqEPREjdw5ElMGjj27wJC6Csvdninhc01OnCgMh9iwJTubzBQmXOKo:1nOc2g:EfpIUKMk4DrX4O18D8Mw3LITDJBGPhQW0ftwYJX9ZKM",
+    "expire_date": "2022-03-14T09:10:06.519Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1sy248kodwh0dxv6cxmyqr26stifsq84",
+  "fields": {
+    "session_data": ".eJxVjLEOwjAMRP8lM4poDY3DyM43RI4dkwJKpKadEP9OK3UA3Xbv3b1NoGXOYWlpCqOYi-nM4beLxM9UNiAPKvdquZZ5GqPdFLvTZm9V0uu6u38HmVpe1wrAgKqEPREjdw5ElMGjj27wJC6Csvdninhc01OnCgMh9iwJTubzBQmXOKo:1nPqEY:3ENXs6iiBCim6YiN3qet9OnVcx9kU0BAQC4N9IYHQNo",
+    "expire_date": "2022-03-17T18:31:26.070Z"
+  }
+},
+{
+  "model": "assistant.client",
+  "pk": 1,
+  "fields": {
+    "full_name": "Васнецов Андрей Иванович"
+  }
+},
+{
+  "model": "assistant.client",
+  "pk": 2,
+  "fields": {
+    "full_name": "Курыгин Евгений Андросович"
+  }
+},
+{
+  "model": "assistant.client",
+  "pk": 3,
+  "fields": {
+    "full_name": "Гайдученок Дмитрий Сергеевич"
+  }
+},
+{
+  "model": "assistant.question",
+  "pk": 1,
+  "fields": {
+    "question_title": "Какой тип бура вы используете?"
+  }
+},
+{
+  "model": "assistant.eq_category",
+  "pk": 1,
+  "fields": {
+    "name": "Труба"
+  }
+},
+{
+  "model": "assistant.eq_category",
+  "pk": 2,
+  "fields": {
+    "name": "Переходники, замки"
+  }
+},
+{
+  "model": "assistant.eq_category",
+  "pk": 3,
+  "fields": {
+    "name": "Переходники"
+  }
+},
+{
+  "model": "assistant.eq_category",
+  "pk": 4,
+  "fields": {
+    "name": "Пневмоударник"
+  }
+},
+{
+  "model": "assistant.eq_category",
+  "pk": 5,
+  "fields": {
+    "name": "Долота, коронки"
+  }
+},
+{
+  "model": "assistant.eq_category",
+  "pk": 6,
+  "fields": {
+    "name": "РД-СД-ТД"
+  }
+},
+{
+  "model": "assistant.eq_category",
+  "pk": 7,
+  "fields": {
+    "name": "Шнек"
+  }
+},
+{
+  "model": "assistant.eq_category",
+  "pk": 8,
+  "fields": {
+    "name": "Прочее"
+  }
+},
+{
+  "model": "assistant.eq_drilling",
+  "pk": 1,
+  "fields": {
+    "name": "Шнековое"
+  }
+},
+{
+  "model": "assistant.eq_drilling",
+  "pk": 2,
+  "fields": {
+    "name": "Пневмоударное"
+  }
+},
+{
+  "model": "assistant.eq_drilling",
+  "pk": 3,
+  "fields": {
+    "name": "Колонковое"
+  }
+},
+{
+  "model": "assistant.eq_drilling",
+  "pk": 4,
+  "fields": {
+    "name": "Вращательное"
+  }
+},
+{
+  "model": "assistant.equipment",
+  "pk": 1,
+  "fields": {
+    "name": "Труба бурильная",
+    "category": 1,
+    "drilling_type": 2
+  }
+},
+{
+  "model": "assistant.equipment",
+  "pk": 2,
+  "fields": {
+    "name": "Переходник фрезерный",
+    "category": 3,
+    "drilling_type": 3
+  }
+},
+{
+  "model": "assistant.equipment",
+  "pk": 3,
+  "fields": {
+    "name": "Ниппель",
+    "category": 8,
+    "drilling_type": 1
+  }
+},
+{
+  "model": "assistant.equipment",
+  "pk": 4,
+  "fields": {
+    "name": "Долото шарочное",
+    "category": 5,
+    "drilling_type": 4
+  }
+},
+{
+  "model": "assistant.equipment",
+  "pk": 5,
+  "fields": {
+    "name": "Труба обсадная",
+    "category": 1,
+    "drilling_type": 2
+  }
+},
+{
+  "model": "assistant.equipment",
+  "pk": 6,
+  "fields": {
+    "name": "Труба бурильная",
+    "category": 1,
+    "drilling_type": 3
+  }
+},
+{
+  "model": "assistant.equipment",
+  "pk": 7,
+  "fields": {
+    "name": "Труба обсадная",
+    "category": 1,
+    "drilling_type": 3
+  }
+},
+{
+  "model": "assistant.eq_characteristics",
+  "pk": 1,
+  "fields": {
+    "name": "Диаметр",
+    "value": "5",
+    "equipment": 1
+  }
+},
+{
+  "model": "assistant.eq_characteristics",
+  "pk": 2,
+  "fields": {
+    "name": "Длина",
+    "value": "4",
+    "equipment": 1
+  }
+},
+{
+  "model": "assistant.eq_characteristics",
+  "pk": 3,
+  "fields": {
+    "name": "Тип замка",
+    "value": "Ф0-а",
+    "equipment": 1
+  }
+},
+{
+  "model": "assistant.eq_characteristics",
+  "pk": 4,
+  "fields": {
+    "name": "Вид соединения на концах",
+    "value": "3",
+    "equipment": 1
+  }
+},
+{
+  "model": "assistant.eq_characteristics",
+  "pk": 5,
+  "fields": {
+    "name": "Тип соединения",
+    "value": "02",
+    "equipment": 2
+  }
+},
+{
+  "model": "assistant.eq_characteristics",
+  "pk": 6,
+  "fields": {
+    "name": "Соединение с фрезерным переходом",
+    "value": "1",
+    "equipment": 2
+  }
+},
+{
+  "model": "assistant.eq_characteristics",
+  "pk": 7,
+  "fields": {
+    "name": "Присоединительная резьба",
+    "value": "ываы",
+    "equipment": 2
+  }
+},
+{
+  "model": "assistant.eq_characteristics",
+  "pk": 8,
+  "fields": {
+    "name": "Длина",
+    "value": "3",
+    "equipment": 2
+  }
+},
+{
+  "model": "assistant.eq_characteristics",
+  "pk": 9,
+  "fields": {
+    "name": "Диаметр",
+    "value": "02",
+    "equipment": 3
+  }
+},
+{
+  "model": "assistant.eq_characteristics",
+  "pk": 10,
+  "fields": {
+    "name": "Диаметр",
+    "value": "04",
+    "equipment": 4
+  }
+},
+{
+  "model": "assistant.eq_characteristics",
+  "pk": 11,
+  "fields": {
+    "name": "Длина",
+    "value": "05",
+    "equipment": 5
+  }
+},
+{
+  "model": "assistant.eq_characteristics",
+  "pk": 12,
+  "fields": {
+    "name": "Диаметр",
+    "value": "0",
+    "equipment": 6
+  }
+},
+{
+  "model": "assistant.eq_characteristics",
+  "pk": 13,
+  "fields": {
+    "name": "Длина",
+    "value": "0",
+    "equipment": 6
+  }
+}
+]
