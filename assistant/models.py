@@ -16,6 +16,7 @@ class Client(models.Model):
         verbose_name = 'Клиент'
         verbose_name_plural = 'Клиенты'
 
+
 class Question(models.Model):
     question_title = models.CharField(max_length=300)
 
@@ -31,6 +32,19 @@ TYPE_CHOICES = (
     ("withoutdata", "Справочный"),
 
 )
+
+class Objection(models.Model):
+    objection = models.CharField(max_length=300)
+    argument = models.CharField(max_length=300)
+    question = models.ForeignKey(Question, on_delete=models.CASCADE, default=None, related_name='question')
+    
+
+    def __str__(self) -> str:
+        return f"{self.objection} | {self.argument}"
+    
+    class Meta:
+        verbose_name = 'Аргумент на возражение'
+        verbose_name_plural = 'Аргументы на возражения'
 
 class Answer(models.Model):
     answer_title = models.CharField(max_length=100)

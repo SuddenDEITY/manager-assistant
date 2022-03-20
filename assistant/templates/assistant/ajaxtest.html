@@ -1,0 +1,154 @@
+<div class="row align-items-md-stretch mb-3">
+                
+    <div class="col-md-8">
+        <h2 class="mb-2 mx-auto">Рекомендуемый вопрос</h2>
+
+        <div class="answer-wrapper h-80 p-3 bg-light border rounded-3">
+            <p class="question-field display-6 fw-bold" quest-id={{question.id}}>{{ question }}</p>
+            <p id="ajax-next-quest" style="display:none;">{{ ajax_next_question }}<p>
+            <div class="d-grid gap-2 justify-content-md-end">
+                {% for answer in answers %}
+                <button ans-id={{answer.id}} class="answer-btn btn btn-primary fs-5" type="button">{{answer.answer_title}}</button>
+                {% endfor %}
+            </div>
+            <br>
+            
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Ни один ответ не подошёл - внесите ответ клиента" aria-label="Recipient&#39;s username" aria-describedby="basic-addon2">
+                <button ans-id="custom" class="answer-btn btn btn-outline-secondary btn-lg fs-4" type="button"> Продолжить </button>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div class="col-md-4">
+        <h2 class="mb-2 mx-auto">Оборудование</h2>
+
+        <div class="treeview-animated h-80 bg-light border rounded-3 overflow-auto mb-3 mb-md-0 mr-md-3 bg-light" style="max-width: 760px; height: 402px;">
+            
+            <ul class="item-container treeview-animated-list mb-3 col-sm-4">
+                {% for cat in category_list %}
+                <li class="item-wrapper treeview-animated-items">
+                    <a id="cat-id-{{ cat.id }}" class="item-li treeview-animated-items-header" cat-id="{{ cat.id }}">
+                        <span class="material-icons">chevron_right</span>
+                        <span>{{ cat }}</span>
+                    </a>
+                    <ul class="equipment-list nested">
+                        {% for eq in cat.equipment %}
+                            <span>eq.name</span>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% endfor %}
+            <div id="filter_by" style="display: none;">
+                <span id="filter_by_field">{{ filter_by_field }}</span>
+                <span id="filter_by_value">{{ filter_by_value }}</span>
+            </div>
+            </ul>
+
+        </div>
+    
+    </div>
+    
+
+</div>
+
+<div class="row align-items-md-stretch">
+    
+    <div class="col-md-8">
+        <h2 class="mb-2 mx-auto">Последующие вопросы</h2>
+
+        <div class="h-50 p-4 bg-light border rounded-3 mb-1">
+            
+            <p class="next-quest col-md-8 fs-5">{{next_question}}</p>                                        
+            
+
+        </div>
+
+        <h2 class="arguments col-md-8 fs-4">Аргументы на возражения</h2>
+
+        <div class="h-49 p-4 bg-light border rounded-3">
+            
+            
+
+            <table>
+                <tbody><tr class="col-6 fs-5">
+                    <th>Возражения</th>
+                    <th class="col-6 fs-5">Аргументы</th>
+                </tr>
+                {% for obj in objections %}
+                      <tr class="obj-arg-wrapper col-6 fs-5">
+                        <td>{{ obj.objection }}</td>
+                        <td>{{ obj.argument }}</td>
+                      </tr>
+                {% endfor %}
+              </tbody></table>
+
+
+        </div>
+
+
+    </div>
+    
+    <div class="col-md-4">
+        
+        <h2 class="mb-2 mx-auto">Характеристики</h2>
+
+        <div class="h-100 bg-light border rounded-3">
+            <div id="characteristics" class="col-md-8 fs-5">
+            </div>
+        </div> 
+    
+    </div>
+    
+<div class="white-space">
+</div>
+</div>
+
+<script>
+(function ($) {
+    $('.answer-btn').click(function () {
+        var thisDiv = $('.wrapper-django-change');
+        var question_id = $('.question-field').attr('quest-id');
+        var answer_id = $(this).attr('ans-id');
+        var category = $('.item-container');
+        $.get(`/get_all_data/${answer_id}/${question_id}/${JSON.stringify(filter_json)}/`,
+            function(data){
+                thisDiv.html('');
+                thisDiv.append(data);
+                category.append(data);
+                $('.next-quest').html(`{{ ajax_next_question }}`);
+                var filter_field = $('#filter_by').find('#filter_by_field').text();
+                var filter_value = $('#filter_by').find('#filter_by_value').text();
+                filter_by_arr.push([filter_field,filter_value]);
+                $.each(filter_by_arr, function(i, obj){
+                    var key = obj[0];
+                    var value = obj[1];
+                    filter_json[key] = value;
+                });
+                $('#filter_by').remove();
+            }
+        );
+    });
+    $('.item-wrapper').click(function (e) {
+      e.stopPropagation();
+      var thisDiv = $(this).find('ul');
+      var category_id = $(this).find('a').attr('cat-id');
+      $.get(`/get_equipment/${category_id}/${JSON.stringify(filter_json)}/`,
+            function(data){
+                
+                if (!thisDiv.hasClass('active')){
+                    thisDiv.html('');
+                    thisDiv.addClass('active').append(data).hide();
+                    thisDiv.slideDown();
+                }else{
+                    thisDiv.removeClass('active').slideUp();
+                }
+            }
+        );
+        $(this).find('.material-icons').toggleClass('item-wrapper-down');
+        $(this).find('.item-li').toggleClass('active-cat');
+    });
+})(jQuery);
+</script>

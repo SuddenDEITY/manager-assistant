@@ -20,25 +20,52 @@ var filter_json = {};
         $(this).find('.item-li').toggleClass('active-cat');
     });
 
+    // $('.answer-btn').click(function () {
+    //     var thisDiv = $('.answer-wrapper');
+    //     var question_id = $('.question-field').attr('quest-id');
+    //     var answer_id = $(this).attr('ans-id');
+    //     var category = $('.item-container');
+    //     $.get(`/apply_answer/${question_id}/`,
+    //           function(data){
+    //             thisDiv.html('');
+    //             thisDiv.append(data);
+    //             $('.next-quest').html('');
+    //             $('.next-quest').append($('#ajax-next-quest').text());
+                
+    //           }
+    //       );
+          
+    //       $.get(`/get_filter_val/${answer_id}/${JSON.stringify(filter_json)}`,
+    //           function(data){
+    //             category.html('');
+    //             category.append(data);
+    //             var filter_field = $('#filter_by').find('#filter_by_field').text();
+    //             var filter_value = $('#filter_by').find('#filter_by_value').text();
+    //             filter_by_arr.push([filter_field,filter_value]);
+    //             $.each(filter_by_arr, function(i, obj){
+    //                 var key = obj[0];
+    //                 var value = obj[1];
+    //                 filter_json[key] = value;
+    //                 console.log(filter_json);
+    //             });
+    //             $('#filter_by').remove();
+    //           }
+    //       );
+    //   });
+
     $('.answer-btn').click(function () {
-        var thisDiv = $('.answer-wrapper');
+        var thisDiv = $('.wrapper-django-change');
         var question_id = $('.question-field').attr('quest-id');
         var answer_id = $(this).attr('ans-id');
         var category = $('.item-container');
-        $.get(`/apply_answer/${question_id}/`,
-              function(data){
+        $.get(`/get_all_data/${answer_id}/${question_id}/${JSON.stringify(filter_json)}/`,
+            function(data){
                 thisDiv.html('');
+                category.html('');
                 thisDiv.append(data);
+                category.append(data);
                 $('.next-quest').html('');
                 $('.next-quest').append($('#ajax-next-quest').text());
-                
-              }
-          );
-          
-          $.get(`/get_filter_val/${answer_id}/${JSON.stringify(filter_json)}`,
-              function(data){
-                category.html('');
-                category.append(data);
                 var filter_field = $('#filter_by').find('#filter_by_field').text();
                 var filter_value = $('#filter_by').find('#filter_by_value').text();
                 filter_by_arr.push([filter_field,filter_value]);
@@ -46,11 +73,10 @@ var filter_json = {};
                     var key = obj[0];
                     var value = obj[1];
                     filter_json[key] = value;
-                    console.log(filter_json);
                 });
                 $('#filter_by').remove();
-              }
-          );
-      });
+            }
+        );
+    });
 
   })(jQuery);

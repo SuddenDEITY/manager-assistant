@@ -1,16 +1,21 @@
 from django.contrib import admin
 
 from django.contrib import admin
-from .models import Question, Answer, Client, Equipment, Eq_Drilling, Eq_Category, Eq_Characteristics
+from .models import Question, Answer, Client, Equipment, Eq_Drilling, Eq_Category, Eq_Characteristics, Objection
 # Register your models here.
 
 class AnswerInline(admin.TabularInline):
     model = Answer
     extra = 0
 
+class ObjectionInline(admin.TabularInline):
+    model = Objection
+    extra = 0
+
 class QuestionAdmin(admin.ModelAdmin):
     inlines = [
         AnswerInline,
+        ObjectionInline
     ]
 
 class CharacteristicInline(admin.TabularInline):
