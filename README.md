@@ -1,6 +1,6 @@
 # Manager Assistant
 
-## Instalation
+## Installation
 Для начала вам необходимо склонировать этот репозиторий:
 ```
 git clone https://github.com/SuddenDEITY/manager-assistant <ВАША ПАПКА>
